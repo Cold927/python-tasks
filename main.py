@@ -16,7 +16,7 @@ def main():
     if n == '4':
         pass
     if n == '5':
-        pass
+        task5.numberSequence(7)
     if n == '6':
         pass
 
