@@ -16,9 +16,17 @@ def main():
     if n == '4':
         pass
     if n == '5':
-        task5.numberSequence(7)
+        task5.numberSequence()
     if n == '6':
-        pass
+        lst = [1, 2, 3, 4, 5, 6]
+        print(task6.modify_list(lst))  # None
+        print(lst)  # [1, 2, 3]
+        task6.modify_list(lst)
+        print(lst)  # [1]
+
+        lst = [10, 5, 8, 3]
+        task6.modify_list(lst)
+        print(lst)  # [5, 4]
 
 
 if __name__ == '__main__':

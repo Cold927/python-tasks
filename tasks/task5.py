@@ -1,4 +1,4 @@
-def numberSequence(n):
+def numberSequence():
     print('Введите число: ')
     list, amount_repeat = [], int(input())
     for i in range(amount_repeat):
