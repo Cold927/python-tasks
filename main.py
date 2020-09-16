@@ -3,7 +3,7 @@ from tasks import task1, task2, task3, task4, task5, task6
 
 def main():
 
-    print('Введите номер задания:')
+    print('Введите номер задания: ')
     n = input()
     if n == '1':
         pass
@@ -14,7 +14,7 @@ def main():
         taskcat.getBoysNumber()
         taskcat.getGirlsNumber()
     if n == '4':
-        pass
+        task4.duoSumm()
     if n == '5':
         task5.numberSequence()
     if n == '6':
