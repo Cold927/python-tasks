@@ -1,21 +1,19 @@
 """
 Задание 2
 Есть строка, содержащая текст и целые числа. Напишите функцию, которая создаёт список из целых чисел в строке.
+
+str - строка символов
+sp - список, созданный на основе строки str
+result - найденные числа в строке
 """
 
 
 def digits():
-    """
-
-    :return:
-    """
     result = ''
     print('Введите строку: ')
-    s = input()
-    for i in range(len(s)):
-        sp = list(s)
-        if sp[i].isdigit():
+    str = input()
+    sp = list(str)
+    for i in range(len(str)):
+        if sp[i].isdigit():  # Проверка символа, на то, что это - цифра
             result += sp[i] + ' '
-        else:
-            pass
     print(result)

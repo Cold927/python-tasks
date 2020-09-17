@@ -5,11 +5,12 @@ def main():
     print('Введите номер задания: ')
     n = input()
     if n == '1':
-        pass
+        task1.dictionary()
     if n == '2':
         task2.digits()
     if n == '3':
-        taskcat = task3.Cat(30)
+        print('Введите количество котят: ')
+        taskcat = task3.Cat(int(input()))
         taskcat.getBoysNumber()
         taskcat.getGirlsNumber()
     if n == '4':

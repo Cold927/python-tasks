@@ -5,6 +5,10 @@
 котята девочки (кол-во), общее кол-во которых равно аргументу класса - кол-во котят.
 У класса есть два метода: метод "девочки", возвращает кол-во котят девочек и метод "мальчики",
 который возвращает кол-во котят мальчиков.
+
+number - общее количество котят
+boys - количество котят мальчиков
+girls - количество котят девочек
 """
 import random
 
@@ -12,6 +16,10 @@ import random
 class Cat:
 
     def __init__(self, number):
+        """
+        :param number: number of cats
+        :type number: type number
+        """
         self.number = number
         self.boys = random.randint(0, self.number)
         self.girls = self.number - self.boys
