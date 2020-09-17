@@ -2,13 +2,12 @@ from tasks import task1, task2, task3, task4, task5, task6
 
 
 def main():
-
     print('Введите номер задания: ')
     n = input()
     if n == '1':
         pass
     if n == '2':
-        pass
+        task2.digits()
     if n == '3':
         taskcat = task3.Cat(30)
         taskcat.getBoysNumber()

@@ -1,13 +1,23 @@
+# Задание 5
+# Напишите программу, которая выводит часть последовательности 1 2 2 3 3 3 4 4 4 4 5 5 5 5 5 ...
+# (число повторяется столько раз, чему равно).
+# На вход программе передаётся неотрицательное целое число n — столько элементов последовательности должна отобразить программа.
+#
+#
+# На выходе ожидается последовательность чисел, записанных через пробел в одну строку.
+#
+# Например, если n = 7, то программа должна вывести 1 2 2 3 3 3 4.
+
 def numberSequence():
     print('Введите число: ')
-    list, amount_repeat = [], int(input())
+    lst, amount_repeat = [], int(input())
     for i in range(amount_repeat):
         repeat = 0
         while repeat < i:
-            list.append(i)
+            lst.append(i)
             repeat += 1
-            if len(list) == amount_repeat:
-                print(*list)
+            if len(lst) == amount_repeat:
+                print(*lst)
                 break
     if amount_repeat == 1:
         print(amount_repeat)
